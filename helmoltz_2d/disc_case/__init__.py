@@ -1,0 +1,3 @@
+# helmoltz_2d/disc_case/__init__.py
+from .exact_solution import ExactSolution
+# from .integral_representation_with_known_solution import IntegralRepresentationWithKnownSolution

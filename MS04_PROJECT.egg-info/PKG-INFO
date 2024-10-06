@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: MS04_PROJECT
+Version: 0.1
+Summary: A quick BEM solver for the 2D Helmoltz equation in the case of the diffraction of a plane wave by a disc.
+Author: Etienne Rosin
+Author-email: etienne.rosin@ensta-paris.fr
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: cmasher
