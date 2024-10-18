@@ -2,3 +2,4 @@
 from .obstacle import Obstacle
 from .disc import Disc
 from .square import Square
+from .ellipse import Ellipse

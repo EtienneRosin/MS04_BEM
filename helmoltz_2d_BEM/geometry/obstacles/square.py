@@ -1,12 +1,10 @@
 
 from helmoltz_2d_BEM.geometry.obstacles import Obstacle
-# from helmoltz_2d.geometry.obstacles import Obstacle
 from helmoltz_2d_BEM.utils import MSColors
 
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
-from matplotlib.collections import LineCollection
 
 
 
@@ -109,11 +107,8 @@ class Square(Obstacle):
         segments_per_side = [self.N_e // 4] * 4
         remaining_segments = self.N_e % 4
         
-        # Répartir les segments restants sur les premiers côtés
         for i in range(remaining_segments):
             segments_per_side[i] += 1
-        
-        print(f"{segments_per_side = }")
         
         nodes = []
         for i in range(4):
