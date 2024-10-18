@@ -27,3 +27,17 @@ pip install -e .
 ~~~
 - ouvrir le fichier `helmoltz_2d/disc_case/integral_representation_with_known_solution.py`
 - l'exécuter
+
+
+
+
+Find $p \in H^{-1/2}(\Gamma)$ s.t. :
+$$\displaystyle \int_\Gamma G(\vec{x}, \vec{y})p(\vec{y}) d \Gamma(\vec{y}) = u^{\text{inc}}(\vec{x})$$
+                
+Which can be expressed as matricial system :
+$$A\vec{p} = \vec{b}$$
+
+With : 
+$\displaystyle b_i = - \int_{\Gamma_i} u^{\text{inc}}(\vec{y}) d \Gamma(\vec{y})$, $p_i = p(\vec{y}_i)$ and 
+
+$\displaystyle A_{ij} = \int_{\Gamma_j}\int_{\Gamma_i}G(\vec{x}, \vec{y})d \Gamma(\vec{x})d \Gamma(\vec{y})$
