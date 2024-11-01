@@ -26,7 +26,7 @@ if __name__ == '__main__':
     Omega = RectangularDomainWithObstacle(boundaries=boundaries, steps=steps, obstacle=disc)
 
     # Plane wave --------------------------------
-    wave_number = 2*np.pi
+    wave_number = 40*np.pi
     k = wave_number * np.array([1, 1])
 
     # Exact solution ----------------------------
@@ -40,4 +40,7 @@ if __name__ == '__main__':
     # Integral representation -------------------
     integral_representation = IntegralRepresentation(domain=Omega, u_inc=u_inc, normal_trace=p(disc.y_e_m.T))
     # U = integral_representation.solve()
-    integral_representation.display(field="angle", save_name="Figures/exact_integral_representation")
+    integral_representation.display(
+        field="real", 
+        # save_name="Figures/exact_integral_representation"
+        )

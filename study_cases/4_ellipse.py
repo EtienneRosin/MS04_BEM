@@ -30,6 +30,12 @@ Omega = RectangularDomainWithObstacle(boundaries=boundaries, steps=steps, obstac
 
 IR = IntegralRepresentation(domain=Omega, u_inc=u_inc, normal_trace=p)
 
-IR.display(field="real", save_name="Figures/ellipse_case")
-IR.display(field="angle", save_name="Figures/ellipse_case")
-IR.display(field="abs", save_name="Figures/ellipse_case")
+IR.display(field="real", 
+        #    save_name="Figures/ellipse_case"
+           )
+IR.display(field="angle",
+        #    save_name="Figures/ellipse_case"
+           )
+IR.display(field="abs", 
+        #    save_name="Figures/ellipse_case"
+           )
